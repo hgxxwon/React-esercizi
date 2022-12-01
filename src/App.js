@@ -4,7 +4,8 @@ import { Container } from "./Container";
 export class App extends React.Component{
     render() {
         return(
-                <Container children="Prova">
+                <Container title="My application">
+                    <p>Ciao</p>
                 </Container>
             ) 
     }

@@ -5,8 +5,9 @@ export class Container extends React.Component{
         return (
             <div className="container">
                 <div>
-                {this.props.children}
+                    {this.props.title}
                 </div>
+                {this.props.children}
             </div>
         )
     }
