@@ -1,40 +1,24 @@
 import React from "react";
 
 export class Login extends React.Component{
-    state = {
-        username: '',
-        password: '',
-        remember: false
-    }
-    
-    handleInputChange = (event) => {
-        const value = event.target.value
-        const name = event.target.name
-        const type = event.target.type
-        const checked = event.target.checked
+   handleForm = (event) => {
+    event.preventDefault()
 
-        this.setState({
-            [name]: type === 'checkbox' ? checked : value
-        })
-    }
-
-    handleResetState = () => {
-        this.setState({
-            username: '',
-            password: '',
-            remember: false
-        })
-    }
-
-
+    const username = event.target.elements.username.value
+    const password = event.target.elements.password.value
+    const checked = event.target.elements.remember.checked
+   } 
     render(){
         return (
             <div>
                 <h2>A Simple Form</h2>
-                <input name="username" value={this.state.username} onChange={this.handleInputChange}/>
-                <input name="password" type="password" value={this.state.password} onChange={this.handleInputChange}/>
-                <input name="remember" type="checkbox" checked={this.state.remember} onChange={this.handleInputChange}/>
-                <button onClick={this.handleResetState}>Click me to Reset!</button>
+                <form onSubmit={this.handleForm}>
+                    <input name="username" />
+                    <input name="password" type="password" />
+                    <input name="remember" type="checkbox"/>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
             </div>
         )
     }
