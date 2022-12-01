@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 
 export class TodoList extends React.Component{
 
@@ -27,13 +27,24 @@ export class TodoList extends React.Component{
         })
       }
     
+
+      handleRemoveButton = (event) => {
+        event.preventDefault()
+        const filters = this.state.items.filter(filters.filter.forEach(element => {
+            element.removeItem('li')
+        }))
+        this.setState({
+            items: filters
+        })
+      }
+
       render() {
         return (
           <div>
             <h2>Todo List!</h2>
             <ul>
               {
-                this.state.items.map((li) => <li>{li}</li>)
+                this.state.items.map((li) => <li>{li}  <button type="submit" onClick={this.handleRemoveButton}>Remove</button></li>)
               }
             </ul>
             <form onSubmit={this.handleSubmitTodo}>
