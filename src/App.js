@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "./Container";
-import { LanguageContext } from "./LanguageContext";
+import { Sum } from "./Sum";
 import { Welcome } from "./Welcome";
 
 export class App extends React.Component{
@@ -18,6 +18,7 @@ export class App extends React.Component{
             <div>
                 <Container title="Benvenuto">
                     <Welcome />
+                    <Sum number1={9} number2={3} />
                 </Container>
             </div>
             ) 
