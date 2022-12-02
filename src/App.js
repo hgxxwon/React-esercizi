@@ -22,6 +22,7 @@ export class App extends React.Component{
             </select>
             <LanguageContext.Provider value={this.state.language}>
                 <Container title="Benvenuto">
+                    <Welcome />
                 </Container>
             </LanguageContext.Provider>
             </div>
