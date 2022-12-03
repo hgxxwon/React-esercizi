@@ -1,6 +1,6 @@
 import React from "react";
+import { ClickCounter } from "./ClickCounter";
 import { Container } from "./Container";
-import { Sum } from "./Sum";
 import { Welcome } from "./Welcome";
 
 export class App extends React.Component{
@@ -9,7 +9,7 @@ export class App extends React.Component{
             <div>
                 <Container title="Benvenuto">
                     <Welcome />
-                    <Sum />
+                    <ClickCounter />
                 </Container>
             </div>
             ) 
