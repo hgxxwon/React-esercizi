@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "./Container";
-import { GitHubUser } from "./GitHubUser";
+import { Add } from "./Jsx_3";
 import { Welcome } from "./Welcome";
 
 export function App(){
@@ -8,7 +8,7 @@ export function App(){
             <div>
                 <Container title="Benvenuto">
                     <Welcome />
-                    <GitHubUser username="hgxxwon" />
+                    <Add n1={2} n2={8} />
                 </Container>
             </div>
             ) 
