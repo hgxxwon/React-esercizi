@@ -1,17 +1,23 @@
-import React from "react";
-import { ClickCounter } from "./ClickCounter";
+import React, {useState} from "react";
 import { Container } from "./Container";
+import { Counter } from "./Counter";
 import { Welcome } from "./Welcome";
 
-export class App extends React.Component{
-    render() {
+export function App(){
+    const [showCounter, setShowCounter] = useState(true)    
+    
+
+    function handleToggleCounter(){
+        setShowCounter(s=> !s)
+    }
+
         return(
             <div>
                 <Container title="Benvenuto">
                     <Welcome />
-                    <ClickCounter />
+                    <button onClick={handleToggleCounter}>Toggle Me!</button>
+                    {showCounter && <Counter />}
                 </Container>
             </div>
             ) 
     }
-}
