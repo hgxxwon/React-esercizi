@@ -1,6 +1,6 @@
 import React from "react";
+import { ClickCounter } from "./ClickCounter";
 import { Container } from "./Container";
-import { Add } from "./Jsx_3";
 import { Welcome } from "./Welcome";
 
 export function App(){
@@ -8,7 +8,7 @@ export function App(){
             <div>
                 <Container title="Benvenuto">
                     <Welcome />
-                    <Add n1={2} n2={8} />
+                    <ClickCounter />
                 </Container>
             </div>
             ) 
