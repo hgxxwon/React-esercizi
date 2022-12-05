@@ -1,6 +1,6 @@
 import React from "react";
-import { ClickCounter } from "./ClickCounter";
 import { Container } from "./Container";
+import { GitHubUser } from "./GitHubUser";
 import { Welcome } from "./Welcome";
 
 export function App(){
@@ -8,7 +8,7 @@ export function App(){
             <div>
                 <Container title="Benvenuto">
                     <Welcome />
-                    <ClickCounter />
+                    <GitHubUser username="hgxxwon" />
                 </Container>
             </div>
             ) 
