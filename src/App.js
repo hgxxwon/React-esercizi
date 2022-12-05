@@ -1,5 +1,5 @@
-import { ClickCounter } from "./ClickCounter";
 import { Container } from "./Container";
+import { Login } from "./Login";
 import { Welcome } from "./Welcome";
 
 export function App(){
@@ -7,7 +7,7 @@ export function App(){
             <div>
                 <Container>
                     <Welcome />
-                    <ClickCounter />
+                    <Login />
                 </Container>
             </div>
             ) 
