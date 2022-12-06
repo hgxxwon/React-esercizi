@@ -1,9 +1,9 @@
 import { createRoot } from "react-dom/client";
-import { App } from "./App";
 import './index.css';
+import { Router } from "./Root";
 
 
 const id = document.getElementById('root');
 const root = createRoot(id);
 
-root.render(<App />);
+root.render(<Router/>);

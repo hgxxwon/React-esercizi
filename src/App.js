@@ -1,14 +1,14 @@
 import { Container } from "./Container";
-import { Login } from "./Login";
 import { Welcome } from "./Welcome";
+import { Route, Routes } from "react-router-dom"
+
 
 export function App(){
         return(
-            <div>
                 <Container>
-                    <Welcome />
-                    <Login />
+                    <Routes>
+                        <Route path="/" element={<Welcome name="Jimmy"/>} />
+                    </Routes>
                 </Container>
-            </div>
             ) 
     }
