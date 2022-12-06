@@ -11,12 +11,12 @@ const translation = {
     }
 }
 
-export function Welcome(){
+export function Welcome({name}){
     const language = useContext(LanguageContext)
 
     return (
         <div>
-            <h1>{translation[language]['CURRENT_LANGUAGE']} Mirko!</h1>
+            <h1>{translation[language]['CURRENT_LANGUAGE']} {name}</h1>
         </div>
     )
 }
