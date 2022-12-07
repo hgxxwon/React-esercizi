@@ -10,5 +10,7 @@ export function ClickCounter({initialValue = 0}) {
             <button onClick={onDecrement}>Decrement</button>
             <button onClick={onReset}>Reset</button>
         </div>
+
     )
+   
 }
