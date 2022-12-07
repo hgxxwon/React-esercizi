@@ -5,10 +5,10 @@ const fetcher = (url) => fetch(url).then((response)=> response.json())
 export function UseGithubUser(username){
    const {data, error, mutate} = useSWR(`https://api.github.com/users/${username}`, fetcher)
 
-function fetchUser(){
+function refreshUser(){
     mutate()
 }
 
-return {data, error, onFetch: fetchUser}
+return {data, error, onRefresh: refreshUser}
 
 }
