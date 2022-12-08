@@ -1,12 +1,9 @@
-import React from "react";
-import { Counter } from "./Counter";
+import { InteractiveWelcome } from "./InteractiveWelcome";
 
-export class App extends React.Component{
-    render() {
+export function App(){
         return(
-            <div>
-                <Counter count={0} incrementedBy={5} timeout={2000}/>
-            </div>
+                <div>
+                    <InteractiveWelcome />
+                </div>
             ) 
     }
-}
