@@ -1,9 +1,9 @@
-import { InteractiveWelcome } from "./InteractiveWelcome";
+import { Counter } from "./Counter";
 
 export function App(){
         return(
                 <div>
-                    <InteractiveWelcome />
+                    <Counter />
                 </div>
             ) 
     }
