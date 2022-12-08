@@ -30,9 +30,7 @@ export function Login(){
             <input ref={ref} name="username" value={data.username} onChange={handleInputChange}/>
             <input name="password" type="password" value={data.password} onChange={handleInputChange}/>
             <input name="remember" type="checkbox" checked={data.remember} onChange={handleInputChange}/>
-            <button 
-            style={{backgroundColor: data.password.length < 8 ? 'red' : 'green', padding: '10px'}}
-            type="submit">LOGIN</button>
+            <button type="submit">LOGIN</button>
         </div>
     )
 }
