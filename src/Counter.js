@@ -9,13 +9,19 @@ export class Counter extends React.Component{
    constructor(props){
     super(props)
 
-    setInterval(() => {
+   this._interval = setInterval(() => {
         this.setState((state) => {
             return {
                 count: state.count + (this.props.incrementedBy)
             }
         })
     }, this.props.timeout ?? 1000)
+   }
+
+   componentWillUnmount(){
+    if(this.state.count) {
+        clearInterval(this._interval)
+    }
    }
    
     render(){
