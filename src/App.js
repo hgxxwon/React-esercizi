@@ -14,6 +14,7 @@ export function App(){
                     <Routes>
                         <Route path="/" element={<Welcome name="Jimmy"/>} />
                         <Route path="counter" element={<Counter/>} />
+                        <Route path="*" element={<div><p>Not found</p><Link to="/">Go Home</Link></div>}/>
                     </Routes>
                 </Container>
             ) 
