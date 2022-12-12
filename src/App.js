@@ -1,9 +1,9 @@
-import { ClickTracker } from "./ClickTracker";
+import { FilteredList } from "./FilteredList";
 
 export function App(){
         return(
                 <div>
-                    <ClickTracker />
+                    <FilteredList />
                 </div>
             ) 
     }
