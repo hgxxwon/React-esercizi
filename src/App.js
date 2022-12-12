@@ -1,9 +1,9 @@
-import { TodoList } from "./TodoList";
+import { ClickTracker } from "./ClickTracker";
 
 export function App(){
         return(
                 <div>
-                    <TodoList />
+                    <ClickTracker />
                 </div>
             ) 
     }
