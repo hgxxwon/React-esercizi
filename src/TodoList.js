@@ -27,24 +27,13 @@ export class TodoList extends React.Component{
         })
       }
     
-
-      handleRemoveButton = (event) => {
-        event.preventDefault()
-        const filters = this.state.items.filter(filters.forEach(element => {
-            element.removeItem('li')
-        }))
-        this.setState({
-            items: filters
-        })
-      }
-
       render() {
         return (
           <div>
             <h2>Todo List!</h2>
             <ul>
               {
-                this.state.items.map((li) => <li>{li}<button type="submit" onClick={this.handleRemoveButton}>Remove</button></li>)
+                this.state.items.map((li) => <li>{li}</li>)
               }
             </ul>
             <form onSubmit={this.handleSubmitTodo}>
