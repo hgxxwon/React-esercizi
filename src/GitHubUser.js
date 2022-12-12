@@ -23,7 +23,7 @@ useEffect(()=> {
 
 
     return <div>
-        {data && <h2>{data.name}</h2>}
+        {data && <h2>hello {data.name}</h2>}
         {error && <h2>there's an error</h2>}
     </div>
 }

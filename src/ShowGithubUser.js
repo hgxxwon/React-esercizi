@@ -5,8 +5,7 @@ export function ShowGithubuser(){
     const {username = 'hgxxwon'} = useParams()
     return (
         <div>
-            <p>your user: {username}</p>
-            <h1><GitHubUser/></h1>
+            <h1><GitHubUser username={username}/></h1>
         </div>
     )
 }
