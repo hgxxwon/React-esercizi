@@ -1,9 +1,9 @@
-import { Counter } from "./Counter";
+import { Login } from "./Login";
 
 export function App(){
         return(
                 <div>
-                    <Counter incrementedBy={10} count={0} />
+                    <Login />
                 </div>
             ) 
     }
